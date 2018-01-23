@@ -1,0 +1,426 @@
+.header {
+	height: 500px;
+	background: url('img/header_bg3.jpg') no-repeat;
+	background-size: cover;
+}
+.header a {
+	font-size: 24pt;
+	color: #454545;
+	margin-top: 70px;
+	margin-left: 155px;
+	display: block;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.header p {
+	font-size: 57pt;
+	color: #454545;
+	text-transform: lowercase;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin: 0;
+	font-family: 'Lobster', cursive;
+}
+.rectangle {
+	background: url('img/Rectangle2.png');
+	width: 570px;
+	height: 300px;
+	position: absolute;
+	margin-left: 22%;
+	margin-top: 8%;
+}
+@media screen and (max-width:760px) {
+	.rectangle {
+		width: 250px;
+		height: 150px;
+	}
+}
+@media screen and (max-width:760px) {
+	.header {
+		height: 300px;
+	}
+	.header a {
+		display: none;
+	}
+	.header p {
+		position: absolute;
+		margin: 0;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		font-size: 25pt;
+	}
+}
+
+.main-menu {
+	width: 100%;
+	background-color: #454545;
+}
+.main-menu li {
+	display: inline-block;
+	height: 100px;
+	transition: 4s;
+}
+.main-menu li a {
+	color: white;
+	font-size: 18pt;
+	padding-left: 95px;
+	padding-right: 80px;
+	line-height: 100px;
+	display: block;
+        font-family: 'Roboto', sans-serif;
+}
+.main-menu li:hover {
+	background-color: #486C55;
+}
+.main-menu li:hover a {
+	text-decoration: none;
+	color: #fff;
+}
+.hambi {
+    display: none;
+    height: 100px;
+    background-color: #454545;
+    padding-top: 40px;
+    padding-left: 50px;
+    text-align: left;
+}
+.hambi .glyphicon {
+    font-size: 18pt;
+    cursor: pointer;
+	color: white;
+}
+@media screen and (max-width:760px) {
+    .main-menu li {
+        display: block;
+        width: 100%;
+    }
+    .main-menu {
+        padding: 0;
+        display: none;
+        text-align: center;
+    }
+    .hambi {
+        display: block;
+    }
+}
+@media screen and (min-width:761px){
+    .main-menu {
+        display: block!important;
+    }
+}
+
+.featured {
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30pt;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20px;
+	padding-bottom: 20px;
+}
+.featured2 {
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30pt;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 30px;
+    padding-top: 80px;
+}
+.gallery {
+	margin-bottom: 50px;
+}
+.gallery img {
+	width: 100%;
+}
+.gallery div {
+	padding: 0;
+}
+.overlay {
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	transition: 1s ease;
+}
+
+.image-container:hover .overlay {
+	opacity: 0.7;
+}
+
+.image-container:hover img {
+	filter: blur(3px);
+}
+.overlay p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 18pt;
+}
+.overlay p a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.contact-form {	
+	background-color: #454545;
+	padding: 100px;
+}
+.contact-form h1 {
+	font-size: 24pt;
+        color: white;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+}
+
+.form-control {
+	height: 45px;
+	border-radius: 0;
+	border: 1px solid #000;
+}
+.form-control::placeholder {
+	color: #000;
+}
+.btn, .btn:hover {
+	padding: 15px 25px;
+	background-color: #2B2B2B;
+	color: #fff;
+	border-radius: 0;
+}
+.btn-default {
+	border: 0;
+}
+.footer {
+    background: url('img/footer_bg.png') no-repeat;
+    background-size: cover;
+    height: 400px;
+    
+}
+.body {
+    background-image: url('img/bg.png'); 
+}
+.footer img {
+    margin-top: 100px;
+    float: right;
+    margin-right: 55px;
+}
+.footer ul {
+    float: left;
+    margin-top: 150px;
+    margin-left: 40px;
+}
+.footer ul li {
+    display: inline-block;
+}
+.footer ul li a {
+    color: #fff;
+    font-size: 18pt;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: block;
+}
+@media screen and (max-width:760px) { 
+	.footer img {
+		width: 50%;
+		margin: 90px 80px 70px 0;
+		display: block;
+	}
+	.footer ul {
+		margin: 80px 20px 0 0;
+		text-align: center;
+		float: none;
+	}
+	.footer ul li {
+		display: block;
+	}
+}
+.carousel img {
+    width: 100%;
+}
+.carousel {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.slideshow {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+#about {
+	height: 500px;
+	background: url('img/header_bg2.jpg') no-repeat;
+	background-size: cover;
+}
+#works {
+	height: 500px;
+	background: url('img/header_bg3.jpg') no-repeat;
+	background-size: cover;
+}
+#contact {
+	height: 500px;
+	background: url('img/header_bg4.jpg') no-repeat;
+	background-size: cover;
+}
+.square-blocks div {
+    height: 250px;
+}
+.square-blocks p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 18pt;
+    text-transform: uppercase;
+}
+.section-title {
+    font-size: 24pt;
+    text-align: center;
+    margin: 30px 0px;
+    text-transform: uppercase;
+}
+
+#social {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 30pt;
+}
+.section {
+    margin-top: 10px;
+    margin-right: -15px;
+}
+.section p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+}
+
+#title{
+    font-family: 'Lobster', cursive;
+    font-size: 30pt;
+}
+#aboutme {
+  margin-left: -15px;
+  margin-right: 15px;
+}
+.square-blocks span {
+    font-size: 50pt;
+    color: skyblue;
+}
+#sq {
+    font-size: 65pt;
+}
+.square-about div{
+    height: 500px;
+    width: 300px;
+    background-color: brown;
+}
+.square-about p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 18pt;
+    text-transform: uppercase;
+}
+.aboutme {
+    margin: 150px 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+#vegas {
+	height: 700px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
